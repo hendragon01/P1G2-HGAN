@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html>
+    <body>
+    <h2>Avance 5</h2>
+    <h2>Universidad Privada Cumbre</h2>
+    <p>Hola Mundo</p>
+    <h1>Henry Gustavo Andrade Narvaez - 12382614</h1>
+
+    <p>1.- Mostrar los pares de un numero usando FOR</p>
+    <button onclick="mostrarNumerosParesDeN_FOR()">nostrarNumerosParesDeN_FOR</button>
+
+    <p>2.- cuenta numeros usando FOR</p>
+    <button onclick="contarNumero_FOR()">contarNumero_FOR</button>
+
+    <p>3.- cuenta numero usando WHILE</p>
+    <button onclick="contarNumero_WHILE()">contarNumero_WHILE</button>
+
+    <p>4.- mostrar numero pares</p>
+    <button onclick="mostrarNumerosParesDeN()">mostrarSoloParesDeN</button>
+     
+    <p>5.- mostrar numeros</p>
+    <button onclick="mostrarNumerosParesDeN()">mostrarNumerosParesDeN</button>  
+    
+    <p>6.- factorizar numero</p>
+    <button onclick="factorialNumero()">factorialNumero</button>
+    <br><br><br><br>
+    
+    <P>7.- verifica si un numero es par o impar</P>
+    <button onclick="esPar()">esPar</button>
+
+    <script>
+
+    </script>
+
+    <button onclick="mostrarNumerosParesDeN_FOR()">boton en HTML</button>
+    <script>
+
+    function mostrarNumerosParesDeN_FOR(){
+        var numero = 16
+        for (var i = 1; i <= numero; i++){
+            if(i% 2 ==0){
+                alert(i)
+            }else{
+                //no hacer nada
+        }
+    }
+    }
+    function contarNumero_FOR(){
+        var numero = 5
+        for (var i = 1; i <= numero; i++) {
+            alert(i)
+        }
+    }
+
+    function contarNumero_WHILE(){
+        var numero = 5
+        var i = 1
+        while (i <= numero){
+        alert(i)
+        i = i + 1
+        }
+    }
+
+    function mostrarSoloParesDeN(){
+        var numero = 15
+        var i = 1
+        while(i <= numero){
+            if(i %2 == 0){
+            alert(i + " Es PAR ")
+            }else{
+            //No hacer nada
+            }
+            i = i + 1
+        }
+            alert("FIN")
+
+    }
+
+    function mostrarNumerosParesDeN(){
+        var numero = 7
+        var i = 1
+        while(i <= numero){
+            if(i % 2== 0){
+            alert(i + " Es PAR ")
+        }else{
+            alert(i + " No es PAR")
+        }
+            i = i + 1
+        }
+            alert("FIN")
+
+    }
+    function factorialNumero(){
+        var numero = 7.5
+        var i = 1
+        var resultado = 1
+        while(i <= numero){
+            resultado = resultado * i
+            i = i + 0.01
+        }
+            alert("El factorial de " + numero + " es " + resultado)
+    }
+
+
+    function esPar(){ 
+    var numero = 10
+    if(10 % 2== 0){
+        alert(numero + " Es PAR ")
+    }else{
+        alet(numero + " No es PAR")
+    }
+    }
+
+    </script>
+
+    </body>
