@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Avance 7 - UPC </h1>
+<hr>
+
+<p>factorial de un numero</p>
+<button onclick="FactorialNumero(5)">FactorialNumero</button>
+
+<p>Sumar el factorial de dos numeros</p>
+<button onclick="SumarFactorialAyB()">Sumar el factorial de dos numeros</button>
+
+<p>EjercicioUno</p>
+<button onclick="EjercicioUno()">EjercicioUno </button>
+
+<P>CondicionalCompuesta</P>
+<button onclick="Condicionalcompuesta()"CondicionalCompuesta</button>
+
+<script>
+//codigo de programacion - INICIO
+function SumarFactorialAyB(){
+    var numeroA = 5 //mensaje = 120
+    var numeroB = 5 //mensaje = 120
+
+    var resultadoA = FctorialNumero(numeroA)
+    var resultadoB = FctorialNumero(numeroB)
+
+    var resultadoFinal = resultadoA + resultadoB
+    alert(resultadoFinal)//mensaje = 240
+    
+}
+
+function FctorialNumero(numero){
+    //no hay (var numero) porque es un parametro de la function
+    var i = 1
+    var resultado = 1
+    while (i <= numero){
+        resultado = resultado * 1
+        i= i + 1
+
+    } 
+alert(resultado)
+return resultado//NUEVO: la function ahora retorna un valor
+}
+//codigo de programacion - FIN
+//Ejercicio: Convertir la siguiente condicional compuesta en
+//una condicion animada en su cuaderno y codigo
+//(((5 >= 5)!= (9 < 10)) ||)
+
+//CONDICIONALES COMPUESTAS
+function CondicionalCompuesta(){
+    if((5>9)&&(7!=5)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")//F && T => F
+    }        
+}
+
+
+
+
+
+
+
+
+
+
+//CONDICIONALES ANIDADAS
+function CondicionalAnidada(){
+    if(5>9){
+        if(7!=5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+        }    
+    }else{
+         alert("FALSE")
+    }
+
+
+    //codigo de programacion - INICIO
+
+//(((5 >= 5) != (9 < 10)) || ((10 > 10) == false))
+function EjercicioUno(){
+    if((((5 >= 5) != (9 < 10)) || ((10 > 10) == false))){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+//(((9 < 5 == true) || (! false || (5 == 9)))
+function EjercicioDos(){
+    if(((9 < 5 == true) || (! false || (5 == 9))){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+    
+}    
+
+
+
+//((((7 >=7) == true) || (false == true))|| !(7 > 7))
+
+
+</script>
+
+
